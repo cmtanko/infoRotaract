@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3">
+            <TextView
+                android:text="Suchan Badyakar"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContactName" />
+            <TextView
+                android:text="Patan, Kobahal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContactAddress"
+                android:textColor="@android:color/holo_blue_light" />
+            <TextView
+                android:text="Rotaract Club Of Kathmandu North East"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContactClub"
+                android:textColor="@android:color/holo_blue_light" />
+            <TextView
+                android:text="suchan211@gmail.com"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContactEmail"
+                android:textColor="@android:color/holo_blue_light" />
+            <TextView
+                android:text="9803086679"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContactPhone"
+                android:textColor="@android:color/holo_blue_light" />
+            <TextView
+                android:text="AB+"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContactBloodGroup"
+                android:textColor="@android:color/holo_blue_light" />
+            <TextView
+                android:text="Availability: Within 48 hrs"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContactAvailability"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:gravity="center_horizontal">
+        <ImageButton
+            android:src="@android:drawable/sym_action_call"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCall"
+            android:layout_gravity="left" />
+        <ImageButton
+            android:src="@android:drawable/ic_dialog_email"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSMS"
+            android:layout_gravity="right" />
+    </LinearLayout>
+</LinearLayout>

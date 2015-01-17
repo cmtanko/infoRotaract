@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout1"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:gravity="center_horizontal">
+        <TextView
+            android:text="Rotaract Dance Party"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/lblEventTitle"
+            android:textColor="#ffeeeeee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Material.Headline"
+            android:gravity="center_horizontal" />
+        <ImageButton
+            android:src="@android:drawable/btn_star_big_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgEventFav"
+            android:background="@android:color/transparent"
+            android:layout_gravity="right" />
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/eventPic_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgEventCoverPic" />
+    <TextView
+        android:text="Oraganized By: Rotaract Club of Patan"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffaaaaaa"
+        android:id="@+id/lblEventHost"
+        android:textSize="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" />
+    <TextView
+        android:text="Venue: Patan Durbar Square  |  2pm onwards"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffaaaaaa"
+        android:textSize="10sp"
+        android:id="@+id/lblEventVenueNTime"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right" />
+    <TextView
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffaaaaaa"
+        android:id="@+id/lblDescription"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="5dp"
+        android:layout_marginBottom="29.7dp" />
+    <TextView
+        android:text="Contact Details:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffaaaaaa"
+        android:id="@+id/ldsf"
+        android:textSize="12dp"
+        android:gravity="left"
+        android:layout_column="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:paddingLeft="5dp">
+            <ImageButton
+                android:src="@android:drawable/sym_action_call"
+                android:layout_column="0"
+                android:id="@+id/imgCall"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginRight="0.0dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@android:color/transparent" />
+            <TextView
+                android:text="Suchan: 9849757089"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffaaaaaa"
+                android:id="@+id/lblContactPerson"
+                android:textSize="12dp"
+                android:gravity="left"
+                android:layout_column="1"
+                android:paddingLeft="10dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:paddingLeft="5dp">
+            <ImageButton
+                android:src="@android:drawable/sym_action_email"
+                android:layout_column="0"
+                android:id="@+id/imgEmail"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:background="@android:color/transparent" />
+            <TextView
+                android:text="ssuchand@hotmail.com"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffaaaaaa"
+                android:id="@+id/lblContactEmail"
+                android:textSize="12dp"
+                android:gravity="left"
+                android:layout_column="1"
+                android:paddingLeft="10dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:paddingLeft="5dp">
+            <ImageButton
+                android:src="@android:drawable/ic_input_get"
+                android:layout_column="0"
+                android:id="@+id/imgLink"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@android:color/transparent" />
+            <TextView
+                android:text="More info at www.facebook.com/events/danceparty.php"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffaaaaaa"
+                android:id="@+id/lblEventMoreInfo"
+                android:textSize="12dp"
+                android:gravity="left"
+                android:layout_column="1"
+                android:paddingLeft="10dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
