@@ -1,10 +1,14 @@
+using System;
+using System.ComponentModel;
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Support.V4.View;
+using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using Java.Lang;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 namespace InfoRotaract
 {
@@ -86,6 +90,7 @@ namespace InfoRotaract
 			SetSupportActionBar(toolbar);
 			SupportActionBar.Title = "Info Rotaract";
 		}
+
 		public override bool OnCreateOptionsMenu(IMenu menu)
 		{
 			MenuInflater.Inflate(Resource.Menu.home, menu);

@@ -6,4 +6,8 @@
         android:icon="@android:drawable/ic_menu_search"
         app:showAsAction="always|collapseActionView"
         app:actionViewClass="android.support.v7.widget.SearchView" />
+  <item android:id="@+id/action_searchMore"
+        android:title="Advance Search"
+        android:icon ="@android:drawable/arrow_down_float"
+        app:showAsAction ="always"/>
 </menu>

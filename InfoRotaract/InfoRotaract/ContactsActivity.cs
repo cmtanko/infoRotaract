@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Net.Http;
@@ -8,15 +9,18 @@ using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.V4.View;
+using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
 using InfoRotaract.DataModel;
+using Java.Lang;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Org.Apache.Http.Client.Methods;
+using Exception = System.Exception;
 using SearchView = Android.Support.V7.Widget.SearchView;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
@@ -37,6 +41,7 @@ namespace InfoRotaract
 		private SearchView _searchView;
 		private LinearLayout _layoutAdvSearch;
 		private string _bloodgroup = "", _clubgroup = "", _nameSearch="", _sexgroup="";
+		//private SwipeRefreshLayout _swipeRefreshLayout;
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
@@ -50,7 +55,11 @@ namespace InfoRotaract
 				SupportActionBar.SetHomeButtonEnabled(true);
 				toolbarSearchBar.InflateMenu(Resource.Menu.advanceSearch);
 
-				
+
+			//_swipeRefreshLayout = FindViewById<SwipeRefreshLayout>(Resource.Id.swipeLayout);
+			//_swipeRefreshLayout.SetColorScheme(Android.Resource.Color.HoloBlueBright, Android.Resource.Color.HoloBlueDark, Android.Resource.Color.HoloGreenDark);
+			//_swipeRefreshLayout.Refresh += OnRefreshClick;
+
 			_textView = FindViewById<TextView>(Resource.Id.textView1);
 
 			_layoutAdvSearch = FindViewById<LinearLayout>(Resource.Id.layout_AdvSearch);
@@ -75,7 +84,6 @@ namespace InfoRotaract
 		}
 
 
-
 		private void OnContactItemClicked(object sender, AdapterView.ItemClickEventArgs e)
 		{
 			var selectedFeed = _contacts[e.Position];
@@ -93,19 +101,10 @@ namespace InfoRotaract
 			contactDialog.Show(transaction, "Dialog fragment");
 		}
 
-		public override bool OnOptionsItemSelected(IMenuItem item)
-		{
-			if(item.ItemId == Android.Resource.Id.Home)
-				Finish();
-			return base.OnOptionsItemSelected(item);
-		}
-
 		private void OnSyncButtonClicked(object sender, EventArgs e)
 		{
-			//_layoutAdvSearch.;
-
-			//string url = "https://api.myjson.com/bins/508uf";
-			//CallFromUrl(url);
+			string url = "https://api.myjson.com/bins/465l7";
+			CallFromUrl(url);
 			////if (!Reachability.IsHostReachable("http://google.com"))
 			////{
 			////	// Put alternative content/message here
@@ -123,10 +122,10 @@ namespace InfoRotaract
 				using (var client = new HttpClient())
 				{
 					var fetchedContacts = await client.GetStringAsync(url);
-					//var jObject = JObject.Parse(fetchedContacts);
-					//var feed = JsonConvert.SerializeObject(jObject);
+					JArray jArray = JArray.Parse(fetchedContacts);
+					var feed = JsonConvert.DeserializeObject(jArray.ToString());
 					//var fetchedContact = JsonConvert.DeserializeObject<Contact>(jObject.ToString());
-					Toast.MakeText(this, "Contacts upto date", ToastLength.Long).Show();
+					Toast.MakeText(this, "Contacts upto date" + jArray[0].Children().ToString() , ToastLength.Long).Show();
 				}
 			}
 			catch (Exception e)
@@ -137,22 +136,7 @@ namespace InfoRotaract
 
 		}
 
-		private void OnContactListItemClicked(object sender, AdapterView.ItemClickEventArgs e)
-		{
-			var intent = new Intent(this, typeof(ContactListItemActivity));
-			var selectedFeed = _contacts[e.Position];
-			intent.PutExtra("firstname", selectedFeed.FirstName);
-			intent.PutExtra("lastname", selectedFeed.LastName);
-			intent.PutExtra("email", selectedFeed.Email);
-			intent.PutExtra("phone", selectedFeed.Phone);
-			intent.PutExtra("address", selectedFeed.Address);
-			intent.PutExtra("age", selectedFeed.Age);
-			intent.PutExtra("sex", selectedFeed.Sex);
-			intent.PutExtra("bloodgroup", selectedFeed.BloodGroup);
-			intent.PutExtra("available", selectedFeed.Available);
-			intent.PutExtra("club", selectedFeed.Club);
-			StartActivity(intent);
-		}
+
 
 		private void OnClubGroupSelected(object sender, AdapterView.ItemSelectedEventArgs e)
 		{
@@ -222,6 +206,7 @@ namespace InfoRotaract
 		{
 			MenuInflater.Inflate(Resource.Menu.advanceSearch, menu);
 			var item = menu.FindItem(Resource.Id.action_searchAdv);
+			var itemSearchMore = menu.FindItem(Resource.Id.action_searchMore);
 
 			var searchItem = MenuItemCompat.GetActionView(item);
 			var _searchView = searchItem.JavaCast<SearchView>();
@@ -238,8 +223,43 @@ namespace InfoRotaract
 				_nameSearch = e.Query.ToString();
 				PopulateContactList(_bloodgroup, _clubgroup, _sexgroup, _nameSearch);
 				e.Handled = true;
-			}; 
+			};
 			return true;
 		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			if (item.ItemId == Android.Resource.Id.Home)
+				Finish();
+			if (item.TitleFormatted.ToString() == "Advance Search")
+			{
+				if (_layoutAdvSearch.IsShown)
+				{
+					_layoutAdvSearch.Visibility = ViewStates.Gone;
+				}
+				else
+				{
+					_layoutAdvSearch.Visibility = ViewStates.Visible;
+				}
+			}
+			return base.OnOptionsItemSelected(item);
+		}
+		//private void OnRefreshClick(object sender, EventArgs e)
+		//{
+		//	BackgroundWorker worker = new BackgroundWorker();
+		//	worker.DoWork += worker_DoWork;
+		//	worker.RunWorkerCompleted += worker_RunWorkerCompleted;
+		//	worker.RunWorkerAsync();
+		//}
+
+		//private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+		//{
+		//	RunOnUiThread(() => { _swipeRefreshLayout.Refreshing = false; });
+		//}
+
+		//private void worker_DoWork(object sender, DoWorkEventArgs e)
+		//{
+		//	Thread.Sleep(500);
+		//}
 	}
 }

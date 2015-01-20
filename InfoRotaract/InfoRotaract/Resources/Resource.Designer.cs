@@ -1174,8 +1174,8 @@ namespace InfoRotaract
 			// aapt resource value: 0x7f080032
 			public const int action_context_bar = 2131230770;
 			
-			// aapt resource value: 0x7f08006d
-			public const int action_edit = 2131230829;
+			// aapt resource value: 0x7f08006e
+			public const int action_edit = 2131230830;
 			
 			// aapt resource value: 0x7f080002
 			public const int action_menu_divider = 2131230722;
@@ -1192,11 +1192,14 @@ namespace InfoRotaract
 			// aapt resource value: 0x7f080020
 			public const int action_mode_close_button = 2131230752;
 			
-			// aapt resource value: 0x7f08006c
-			public const int action_search = 2131230828;
+			// aapt resource value: 0x7f08006d
+			public const int action_search = 2131230829;
 			
-			// aapt resource value: 0x7f08006e
-			public const int action_searchAdv = 2131230830;
+			// aapt resource value: 0x7f08006f
+			public const int action_searchAdv = 2131230831;
+			
+			// aapt resource value: 0x7f080070
+			public const int action_searchMore = 2131230832;
 			
 			// aapt resource value: 0x7f080021
 			public const int activity_chooser_view_content = 2131230753;
@@ -1333,14 +1336,14 @@ namespace InfoRotaract
 			// aapt resource value: 0x7f080057
 			public const int lvEvents = 2131230807;
 			
-			// aapt resource value: 0x7f08006f
-			public const int menu_events = 2131230831;
-			
-			// aapt resource value: 0x7f080070
-			public const int menu_members = 2131230832;
-			
 			// aapt resource value: 0x7f080071
-			public const int menu_news = 2131230833;
+			public const int menu_events = 2131230833;
+			
+			// aapt resource value: 0x7f080072
+			public const int menu_members = 2131230834;
+			
+			// aapt resource value: 0x7f080073
+			public const int menu_news = 2131230835;
 			
 			// aapt resource value: 0x7f080015
 			public const int middle = 2131230741;
@@ -1419,6 +1422,9 @@ namespace InfoRotaract
 			
 			// aapt resource value: 0x7f08003c
 			public const int submit_area = 2131230780;
+			
+			// aapt resource value: 0x7f08006c
+			public const int swipeLayout = 2131230828;
 			
 			// aapt resource value: 0x7f08000b
 			public const int tabMode = 2131230731;
@@ -1624,10 +1630,13 @@ namespace InfoRotaract
 			public const int support_simple_spinner_dropdown_item = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int toolbar = 2130903074;
+			public const int SwipeView = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int toolbar_contactSearch = 2130903075;
+			public const int toolbar = 2130903075;
+			
+			// aapt resource value: 0x7f030024
+			public const int toolbar_contactSearch = 2130903076;
 			
 			static Layout()
 			{
