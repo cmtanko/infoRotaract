@@ -41,7 +41,7 @@ namespace InfoRotaract
 			_contact.Age = Intent.GetStringExtra("age");
 			_contact.Sex = Intent.GetStringExtra("sex");
 			_contact.BloodGroup = Intent.GetStringExtra("bloodgroup");
-			_contact.Available = Convert.ToBoolean(Intent.GetStringExtra("available"));
+			_contact.Available = Intent.GetStringExtra("available");
 
 			var tvName = FindViewById<TextView>(Resource.Id.tvContactName);
 			var tvEmail = FindViewById<TextView>(Resource.Id.tvContactEmail);
@@ -58,7 +58,7 @@ namespace InfoRotaract
 			tvAddress.Text = "Address: " + _contact.Address;
 			tvClub.Text =  _contact.Club;
 			tvBloodGroup.Text = _contact.BloodGroup;
-			tvAvailable.Text = _contact.Available?"is Available":"not Available";
+			tvAvailable.Text = _contact.Available=="1"?"is Available":"not Available";
 		}
 
 		private void OnCallButtonClicked(object sender, EventArgs e)

@@ -30,11 +30,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/spSexGroup" />
     </LinearLayout>
-    <Button
-        android:text="Sync"
-        android:id="@+id/btnSync"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"

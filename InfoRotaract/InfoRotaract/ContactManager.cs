@@ -25,8 +25,8 @@ namespace InfoRotaract
 			string docFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
 			_databasePath = Path.Combine(docFolder, databaseName);
 
-			CreateDatabase();
-			InsertData();
+			//CreateDatabase();
+			//InsertData();
 		}
 
 		private void CreateDatabase()
@@ -46,28 +46,28 @@ namespace InfoRotaract
 		private void InsertData()
 		{
 			List<Contact> contacts = new List<Contact>();
-			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "AB+", true,"Patan"));
-			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr. Sanjay", "Shrestha", "Rotaract Club Of Kathmandu East", "27", "Male", "suchan211@gmail.com", "9803086679", "AB+", true, "Patan"));
-			contacts.Add(new Contact("Rtr.Bijay", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr. Roshan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "B-", true, "Patan"));
-			contacts.Add(new Contact("Rtr.Smith", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr. Kiop", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "A+", true, "Patan"));
-			contacts.Add(new Contact("Rtr.Rip", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr. werwer", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr.Rfdgd", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr. Reiu", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "AB+", true, "Patan"));
-			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "A+", true, "Patan"));
-			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "A-", true, "Patan"));
-			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "O-", true, "Patan"));
-			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
-			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "O+", true, "Patan"));
-			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", true, "Patan"));
+			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "AB+", "1","Patan"));
+			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr. Sanjay", "Shrestha", "Rotaract Club Of Kathmandu East", "27", "Male", "suchan211@gmail.com", "9803086679", "AB+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr.Bijay", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr. Roshan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "B-", "1", "Patan"));
+			contacts.Add(new Contact("Rtr.Smith", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr. Kiop", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "A+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr.Rip", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr. werwer", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr.Rfdgd", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr. Reiu", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "AB+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "A+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "A-", "1", "Patan"));
+			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "O-", "1", "Patan"));
+			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr. Suchan", "Badyakar", "Rotaract Club Of Kathmandu North East", "27", "Male", "suchan211@gmail.com", "9803086679", "O+", "1", "Patan"));
+			contacts.Add(new Contact("Rtr.Kapil", "Pandey", "Rotaract Club Of Patan", "22", "Male", "kpl@gmail.com", "9808768965", "B+", "1", "Patan"));
 
 			using (var database = new SQLiteConnection(_databasePath))
 			{
@@ -75,6 +75,16 @@ namespace InfoRotaract
 			}
 		}
 
+		public void InsertData(List<Contact> contacts )
+		{
+			var database = new SQLiteConnection(_databasePath);
+			var sql = "DELETE from contact";
+			database.Execute(sql);
+			using (database)
+			{
+				database.InsertAll(contacts);
+			}
+		}
 		public List<Contact> GetDisplayContacts(string bloodgroup, string clubgroup, string sexgroup, string nameSearch)
 		{
 			string bloodGroupName,clubGroupName,sexGroupName, nameSearhParam;

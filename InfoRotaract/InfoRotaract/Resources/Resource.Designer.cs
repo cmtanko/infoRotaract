@@ -1174,8 +1174,8 @@ namespace InfoRotaract
 			// aapt resource value: 0x7f080032
 			public const int action_context_bar = 2131230770;
 			
-			// aapt resource value: 0x7f08006e
-			public const int action_edit = 2131230830;
+			// aapt resource value: 0x7f08006c
+			public const int action_edit = 2131230828;
 			
 			// aapt resource value: 0x7f080002
 			public const int action_menu_divider = 2131230722;
@@ -1192,14 +1192,17 @@ namespace InfoRotaract
 			// aapt resource value: 0x7f080020
 			public const int action_mode_close_button = 2131230752;
 			
+			// aapt resource value: 0x7f08006b
+			public const int action_search = 2131230827;
+			
 			// aapt resource value: 0x7f08006d
-			public const int action_search = 2131230829;
+			public const int action_searchAdv = 2131230829;
 			
 			// aapt resource value: 0x7f08006f
-			public const int action_searchAdv = 2131230831;
+			public const int action_searchMore = 2131230831;
 			
-			// aapt resource value: 0x7f080070
-			public const int action_searchMore = 2131230832;
+			// aapt resource value: 0x7f08006e
+			public const int action_update = 2131230830;
 			
 			// aapt resource value: 0x7f080021
 			public const int activity_chooser_view_content = 2131230753;
@@ -1215,9 +1218,6 @@ namespace InfoRotaract
 			
 			// aapt resource value: 0x7f08004e
 			public const int btnSMS = 2131230798;
-			
-			// aapt resource value: 0x7f080054
-			public const int btnSync = 2131230804;
 			
 			// aapt resource value: 0x7f080029
 			public const int checkbox = 2131230761;
@@ -1267,50 +1267,50 @@ namespace InfoRotaract
 			// aapt resource value: 0x7f080023
 			public const int image = 2131230755;
 			
-			// aapt resource value: 0x7f080062
-			public const int imgCall = 2131230818;
+			// aapt resource value: 0x7f080061
+			public const int imgCall = 2131230817;
 			
-			// aapt resource value: 0x7f080065
-			public const int imgEmail = 2131230821;
-			
-			// aapt resource value: 0x7f08005d
-			public const int imgEventCoverPic = 2131230813;
+			// aapt resource value: 0x7f080064
+			public const int imgEmail = 2131230820;
 			
 			// aapt resource value: 0x7f08005c
-			public const int imgEventFav = 2131230812;
+			public const int imgEventCoverPic = 2131230812;
 			
 			// aapt resource value: 0x7f08005b
-			public const int imgEventPic = 2131230811;
+			public const int imgEventFav = 2131230811;
 			
-			// aapt resource value: 0x7f080068
-			public const int imgLink = 2131230824;
+			// aapt resource value: 0x7f08005a
+			public const int imgEventPic = 2131230810;
+			
+			// aapt resource value: 0x7f080067
+			public const int imgLink = 2131230823;
 			
 			// aapt resource value: 0x7f080050
 			public const int layout_AdvSearch = 2131230800;
 			
-			// aapt resource value: 0x7f080066
-			public const int lblContactEmail = 2131230822;
+			// aapt resource value: 0x7f080065
+			public const int lblContactEmail = 2131230821;
 			
-			// aapt resource value: 0x7f080063
-			public const int lblContactPerson = 2131230819;
+			// aapt resource value: 0x7f080062
+			public const int lblContactPerson = 2131230818;
 			
-			// aapt resource value: 0x7f08005e
-			public const int lblDescription = 2131230814;
-			
-			// aapt resource value: 0x7f080059
-			public const int lblEventHost = 2131230809;
-			
-			// aapt resource value: 0x7f080069
-			public const int lblEventMoreInfo = 2131230825;
+			// aapt resource value: 0x7f08005d
+			public const int lblDescription = 2131230813;
 			
 			// aapt resource value: 0x7f080058
-			public const int lblEventTitle = 2131230808;
+			public const int lblEventHost = 2131230808;
 			
-			// aapt resource value: 0x7f08005a
-			public const int lblEventVenueNTime = 2131230810;
+			// aapt resource value: 0x7f080068
+			public const int lblEventMoreInfo = 2131230824;
 			
-			// aapt resource value: 0x7f08005f
-			public const int ldsf = 2131230815;
+			// aapt resource value: 0x7f080057
+			public const int lblEventTitle = 2131230807;
+			
+			// aapt resource value: 0x7f080059
+			public const int lblEventVenueNTime = 2131230809;
+			
+			// aapt resource value: 0x7f08005e
+			public const int ldsf = 2131230814;
 			
 			// aapt resource value: 0x7f08003f
 			public const int linearLayout1 = 2131230783;
@@ -1324,8 +1324,8 @@ namespace InfoRotaract
 			// aapt resource value: 0x7f08004c
 			public const int linearLayout4 = 2131230796;
 			
-			// aapt resource value: 0x7f080055
-			public const int listContacts = 2131230805;
+			// aapt resource value: 0x7f080054
+			public const int listContacts = 2131230804;
 			
 			// aapt resource value: 0x7f080009
 			public const int listMode = 2131230729;
@@ -1333,17 +1333,17 @@ namespace InfoRotaract
 			// aapt resource value: 0x7f080025
 			public const int list_item = 2131230757;
 			
-			// aapt resource value: 0x7f080057
-			public const int lvEvents = 2131230807;
+			// aapt resource value: 0x7f080056
+			public const int lvEvents = 2131230806;
+			
+			// aapt resource value: 0x7f080070
+			public const int menu_events = 2131230832;
 			
 			// aapt resource value: 0x7f080071
-			public const int menu_events = 2131230833;
+			public const int menu_members = 2131230833;
 			
 			// aapt resource value: 0x7f080072
-			public const int menu_members = 2131230834;
-			
-			// aapt resource value: 0x7f080073
-			public const int menu_news = 2131230835;
+			public const int menu_news = 2131230834;
 			
 			// aapt resource value: 0x7f080015
 			public const int middle = 2131230741;
@@ -1423,26 +1423,23 @@ namespace InfoRotaract
 			// aapt resource value: 0x7f08003c
 			public const int submit_area = 2131230780;
 			
-			// aapt resource value: 0x7f08006c
-			public const int swipeLayout = 2131230828;
-			
 			// aapt resource value: 0x7f08000b
 			public const int tabMode = 2131230731;
 			
+			// aapt resource value: 0x7f08005f
+			public const int tableLayout1 = 2131230815;
+			
 			// aapt resource value: 0x7f080060
-			public const int tableLayout1 = 2131230816;
+			public const int tableRow1 = 2131230816;
 			
-			// aapt resource value: 0x7f080061
-			public const int tableRow1 = 2131230817;
+			// aapt resource value: 0x7f080063
+			public const int tableRow2 = 2131230819;
 			
-			// aapt resource value: 0x7f080064
-			public const int tableRow2 = 2131230820;
+			// aapt resource value: 0x7f080066
+			public const int tableRow3 = 2131230822;
 			
-			// aapt resource value: 0x7f080067
-			public const int tableRow3 = 2131230823;
-			
-			// aapt resource value: 0x7f08006a
-			public const int textClock1 = 2131230826;
+			// aapt resource value: 0x7f080069
+			public const int textClock1 = 2131230825;
 			
 			// aapt resource value: 0x7f080040
 			public const int textView1 = 2131230784;
@@ -1450,14 +1447,14 @@ namespace InfoRotaract
 			// aapt resource value: 0x7f080027
 			public const int title = 2131230759;
 			
-			// aapt resource value: 0x7f080056
-			public const int toolbar = 2131230806;
+			// aapt resource value: 0x7f080055
+			public const int toolbar = 2131230805;
 			
 			// aapt resource value: 0x7f08004f
 			public const int toolbar_advSearch = 2131230799;
 			
-			// aapt resource value: 0x7f08006b
-			public const int toolbar_bottom = 2131230827;
+			// aapt resource value: 0x7f08006a
+			public const int toolbar_bottom = 2131230826;
 			
 			// aapt resource value: 0x7f080046
 			public const int tvContactAddress = 2131230790;
@@ -1630,13 +1627,10 @@ namespace InfoRotaract
 			public const int support_simple_spinner_dropdown_item = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int SwipeView = 2130903074;
+			public const int toolbar = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int toolbar = 2130903075;
-			
-			// aapt resource value: 0x7f030024
-			public const int toolbar_contactSearch = 2130903076;
+			public const int toolbar_contactSearch = 2130903075;
 			
 			static Layout()
 			{

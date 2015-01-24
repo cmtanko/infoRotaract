@@ -131,9 +131,6 @@
     <AndroidResource Include="Resources\layout\toolbar_contactSearch.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\SwipeView.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -170,7 +167,6 @@
     <XamarinComponentReference Include="xamandroidsupportv7appcompat">
       <Visible>False</Visible>
       <Version>21.0.3.0</Version>
-      <InstallationInProgress>True</InstallationInProgress>
     </XamarinComponentReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

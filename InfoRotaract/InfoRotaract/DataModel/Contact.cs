@@ -11,7 +11,7 @@ namespace InfoRotaract.DataModel
 		}
 
 		public Contact(string firstName,string lastName, string club, string age, string sex, string email, string phone, string bloodGroup,
-			bool available,string address)
+			string available,string address)
 		{
 			FirstName = firstName;
 			LastName = lastName;
@@ -45,7 +45,7 @@ namespace InfoRotaract.DataModel
 		[MaxLength(100)]
 		public string BloodGroup { get; set; }
 		[MaxLength(100)]
-		public bool Available { get; set; }
+		public string Available { get; set; }
 		[MaxLength(100)]
 
 		public string Address { get; set; }
