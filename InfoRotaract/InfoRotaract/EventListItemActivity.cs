@@ -13,6 +13,13 @@ using InfoRotaract.DataModel;
 
 namespace InfoRotaract
 {
+//asdf
+sdaf
+asdf
+asdf
+asdf
+asdf
+asdfdasfasdfasdf
 	[Activity(Label = "Event Detail", Icon = "@drawable/ic_launcher")]
 	public class EventListItemActivity : Activity
 	{
