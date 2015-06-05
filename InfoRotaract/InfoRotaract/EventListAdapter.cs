@@ -13,6 +13,37 @@ using InfoRotaract.DataModel;
 
 namespace InfoRotaract
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	public class EventListAdapter: BaseAdapter<Event>
 	{
 		private Event[] _feeds;
