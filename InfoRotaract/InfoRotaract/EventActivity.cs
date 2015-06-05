@@ -10,7 +10,14 @@ using InfoRotaract.DataModel;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace InfoRotaract
-{
+{]
+//dsf
+asdf
+asdfasdf'asd
+f
+asdfasdf
+asd
+f'
 	[Activity(Label = "Events")]
 	class EventActivity:ActionBarActivity
 	{

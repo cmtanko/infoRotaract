@@ -12,6 +12,8 @@ using Java.Lang;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 namespace InfoRotaract
 {
+
+//comment by srijan
 	[Activity(Label = "InfoRtr", MainLauncher = true, Icon = "@drawable/ic_launcher")]
 	[Android.Runtime.Register("android/support/sample/v7/ActionBarUsage")]
 	public class AppAcitivity : ActionBarActivity

@@ -13,6 +13,29 @@ using InfoRotaract.DataModel;
 
 namespace InfoRotaract
 {
+//co
+mme
+
+
+asdfasdfasdf
+ 
+
+as
+df
+ASD
+f
+
+
+
+
+
+
+
+
+
+
+
+
     public class ContactDialog : DialogFragment
     {
         private Contact _contact;
