@@ -15,6 +15,7 @@ using SQLite;
 
 namespace InfoRotaract
 {
+//shifted to git from svn
 	public class ContactManager
 	{
 		private string _databasePath;

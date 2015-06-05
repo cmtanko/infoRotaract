@@ -46,6 +46,7 @@ namespace InfoRotaract
 
 	public class EventListAdapter: BaseAdapter<Event>
 	{
+//comment added
 		private Event[] _feeds;
 		private Activity _context;
 
