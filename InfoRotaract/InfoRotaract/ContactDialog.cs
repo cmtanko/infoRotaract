@@ -17,10 +17,10 @@ namespace Info23433Rotaractthatsit
     public class ContactDialog : DialogFragment
     
 
+        //optimized loading speed 1`
 
 
-
-
+        //optimized loading speed 2
 
 
 
