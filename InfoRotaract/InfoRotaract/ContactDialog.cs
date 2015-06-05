@@ -14,7 +14,19 @@ using InfoRotaract.DataModel;
 namespace InfoRotaract
 {
     public class ContactDialog : DialogFragment
-    {
+    
+
+
+
+
+
+
+
+
+
+
+
+{
         private Contact _contact;
         private ImageButton btnCall, btnSMS;
 

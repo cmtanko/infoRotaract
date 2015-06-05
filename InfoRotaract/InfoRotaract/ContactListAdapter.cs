@@ -11,7 +11,20 @@ using Android.Views;
 using Android.Widget;
 using InfoRotaract.DataModel;
 
-namespace InfoRotaract
+
+
+
+
+
+
+
+
+
+
+
+
+
+sfsdfsfdsnamespace InfoRotaract
 {
 	public class ContactListAdapter: BaseAdapter<Contact>
 	{
