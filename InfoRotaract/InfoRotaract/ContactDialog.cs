@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 using InfoRotaract.DataModel;
 
-namespace InfoRotaract123123123
+namespace Info23433Rotaractthatsit
 {
     //new class added
     public class ContactDialog : DialogFragment
