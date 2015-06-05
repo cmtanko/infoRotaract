@@ -13,24 +13,13 @@ using InfoRotaract.DataModel;
 
 namespace Info23433Rotaractthatsit
 {
-//co
-mme
-
-
-asdfasdfasdf
- 
-
-as
-df
-ASD
-f
 
 
 
 
 
 
-
+nwe
 
 
 
