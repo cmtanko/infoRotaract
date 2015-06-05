@@ -11,13 +11,7 @@ using Android.Views;
 using Android.Widget;
 using InfoRotaract.DataModel;
 
-
-
-
-
-
-
-
+//Add new things
 
 
 
