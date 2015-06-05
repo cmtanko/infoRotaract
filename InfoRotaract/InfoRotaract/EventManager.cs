@@ -15,7 +15,11 @@ using Java.Util;
 using SQLite;
 
 namespace InfoRotaract
-{
+{//klsdjflkjaskldfjas
+asdfljkasdfkljasdf
+asdfljkasdfljasdf]
+asdfljasldfj
+\
 	class EventManager
 	{
 		private string _databasePath;
